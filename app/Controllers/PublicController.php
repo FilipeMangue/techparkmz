@@ -173,6 +173,53 @@ class PublicController extends Controller
 
         $this->view('public/resources', compact('resources', 'categories'));
     }
-    public function progress(): void { $this->view('public/page', ['title' => 'Progresso & Impacto', 'body' => 'Métricas de impacto, projetos, formações e iniciativas realizadas.']); }
-    public function contact(): void { $this->view('public/page', ['title' => 'Contactos', 'body' => 'Entre em contacto com a Techpark Mozambique para serviços, parcerias ou projetos.']); }
+    public function progress(): void
+    {
+        $milestones = [
+            [
+                'year' => 'Origem',
+                'title' => 'Nascimento da visão Techpark',
+                'summary' => 'A ideia surge da necessidade de criar um espaço tecnológico confiável, capaz de apoiar empresas, instituições, startups e talentos moçambicanos.',
+            ],
+            [
+                'year' => 'Fundação',
+                'title' => 'Registo da Techpark Mozambique, Lda',
+                'summary' => 'A empresa é formalizada com foco em tecnologia da informação, inovação, desenvolvimento digital, formação e segurança eletrónica.',
+            ],
+            [
+                'year' => 'Agora',
+                'title' => 'Construção da plataforma e ecossistema',
+                'summary' => 'Estamos a estruturar a presença digital, serviços, soluções próprias, recursos, eventos e uma base para apoiar iniciativas tecnológicas.',
+            ],
+            [
+                'year' => 'Próximo',
+                'title' => 'Expansão de impacto',
+                'summary' => 'A meta é fortalecer programas, criar produtos digitais, apoiar startups, promover eventos e gerar impacto real em Moçambique.',
+            ],
+        ];
+
+        $this->view('public/progress', compact('milestones'));
+    }
+    public function contact(): void
+    {
+        $contactOptions = [
+            [
+                'title' => 'Clientes & Empresas',
+                'summary' => 'Solicite propostas, serviços, suporte técnico ou desenvolvimento de soluções.',
+                'action' => 'Pedir proposta',
+            ],
+            [
+                'title' => 'Startups & Comunidade',
+                'summary' => 'Submeta iniciativas, participe em programas, eventos e ações de inovação.',
+                'action' => 'Apresentar iniciativa',
+            ],
+            [
+                'title' => 'Parceiros & Investidores',
+                'summary' => 'Explore parcerias estratégicas, investimento, programas e colaboração institucional.',
+                'action' => 'Falar sobre parceria',
+            ],
+        ];
+
+        $this->view('public/contact', compact('contactOptions'));
+    }
 }
