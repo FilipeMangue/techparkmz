@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+require_once dirname(__DIR__) . '/Core/Helpers.php';
+
 use App\Core\Controller;
 use App\Core\Csrf;
 use App\Core\Session;
