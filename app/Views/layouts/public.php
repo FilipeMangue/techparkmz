@@ -10,7 +10,10 @@
 <body>
 <div id="loader"></div>
 <header class="site-header">
-    <a class="brand" href="<?= url('/') ?>">Techpark Mozambique</a>
+    <a class="brand brand-wrap" href="<?= url('/') ?>">
+        <img src="<?= asset('img/logo-techpark.jpeg') ?>" alt="Techpark Mozambique">
+        <span>Techpark Mozambique</span>
+    </a>
     <nav>
         <a href="<?= url('/') ?>">Home</a>
         <a href="<?= url('servicos') ?>">Serviços</a>
