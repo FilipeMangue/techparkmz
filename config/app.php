@@ -2,7 +2,7 @@
 
 return [
     'app_name' => 'Techpark Mozambique',
-    'app_url' => 'http://localhost/techpark/public',
+    'app_url' => 'http://localhost/techparkmz/public',
     'base_path' => '',
     'env' => 'local',
     'debug' => true,
