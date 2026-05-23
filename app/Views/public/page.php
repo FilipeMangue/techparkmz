@@ -1,0 +1,4 @@
+<section class="section narrow">
+    <h1><?= e($title) ?></h1>
+    <p><?= e($body) ?></p>
+</section>
