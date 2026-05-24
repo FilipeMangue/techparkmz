@@ -6,6 +6,7 @@
     <title>Techpark Mozambique</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="<?= asset('css/app.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <div id="loader"></div>
@@ -33,48 +34,86 @@
     <?= $content ?>
 </main>
 
-<footer class="footer premium-footer">
+<footer class="premium-footer">
+
     <div class="footer-main">
+
         <div class="footer-brand">
             <div class="footer-logo">
                 <img src="<?= asset('img/logo-techpark.jpeg') ?>" alt="Techpark Mozambique">
-                <strong>Techpark Mozambique</strong>
+                
+                <div>
+                    <strong>Techpark Mozambique</strong>
+                    <span>Tecnologia • Inovação • Impacto</span>
+                </div>
             </div>
 
             <p>
-                Hub tecnológico focado em inovação, software, segurança eletrónica,
-                formação e transformação digital em Moçambique.
+                Hub tecnológico moçambicano focado em desenvolvimento digital,
+                software, segurança eletrónica, inovação, startups e transformação tecnológica.
             </p>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
 
         <div class="footer-col">
             <h4>Navegação</h4>
-            <a href="<?= url('/') ?>">Home</a>
+
+            <a href="<?= url('') ?>">Home</a>
             <a href="<?= url('servicos') ?>">Serviços</a>
             <a href="<?= url('solucoes') ?>">Soluções</a>
-            <a href="<?= url('progresso') ?>">Progresso</a>
-        </div>
-
-        <div class="footer-col">
-            <h4>Ecossistema</h4>
             <a href="<?= url('startups') ?>">Startups</a>
             <a href="<?= url('eventos') ?>">Eventos</a>
             <a href="<?= url('recursos') ?>">Recursos</a>
-            <a href="<?= url('contactos') ?>">Contactos</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Áreas</h4>
+
+            <span>Software & Plataformas</span>
+            <span>Segurança Eletrónica</span>
+            <span>Infraestrutura & Redes</span>
+            <span>Startups & Inovação</span>
+            <span>Consultoria Tecnológica</span>
+            <span>Formação Digital</span>
         </div>
 
         <div class="footer-col">
             <h4>Contacto</h4>
+
             <span>Maputo, Moçambique</span>
-            <span>info@techparkmz.com</span>
-            <span>Transformação digital com confiança.</span>
+            <span>info@techpark.co.mz</span>
+            <span>+258 82 260 8614</span>
         </div>
+
     </div>
 
     <div class="footer-bottom">
-        <span>© <?= date('Y') ?> Techpark Mozambique, Lda. Todos os direitos reservados.</span>
-        <span>Software • Segurança • Inovação</span>
+        <span>
+            © <?= date('Y') ?> Techpark Mozambique. Todos os direitos reservados.
+        </span>
+
+        <span>
+            Tecnologia • Segurança • Inovação • Impacto
+        </span>
     </div>
+
 </footer>
 
 <script src="<?= asset('js/app.js') ?>"></script>
